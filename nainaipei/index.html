@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>奶奶陪考留守孙女 - 陪读陪考经验、心理关怀与家庭支持指南</title>
+<meta name="description" content="关注奶奶陪考留守孙女这一现实场景，整理陪读陪考中的生活安排、情绪支持、沟通方法、考前准备与常见问题，为留守家庭提供务实参考。">
+<meta name="keywords" content="奶奶陪考留守孙女,留守家庭陪考,祖辈陪读,留守儿童考试,陪考心理关怀,备考家庭支持">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#2f3a3f;
+    --ink-soft:#5c6b72;
+    --paper:#fbf9f4;
+    --paper-2:#f3efe6;
+    --line:#e2dbcc;
+    --warm:#c96a3d;
+    --warm-deep:#a44f28;
+    --green:#5f7f63;
+    --green-soft:#e7efe6;
+    --white:#ffffff;
+    --radius:14px;
+    --shadow:0 8px 24px rgba(74,60,40,.08);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3,h4{margin:0 0 .6em;line-height:1.35;font-weight:700;}
+  p{margin:0 0 1em;}
+  ul,ol{margin:0 0 1em;padding-left:1.3em;}
+  li{margin-bottom:.4em;}
+
+  /* ---------- 页眉 ---------- */
+  .site-header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(251,249,244,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1160px;
+    margin:0 auto;
+    padding:14px 20px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:800;
+    font-size:1.15rem;
+    letter-spacing:.5px;
+    white-space:nowrap;
+  }
+  .brand-mark{
+    width:36px;height:36px;
+    border-radius:10px;
+    background:linear-gradient(135deg,var(--warm),#e0a06a);
+    color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1rem;
+    font-weight:800;
+    flex:0 0 auto;
+  }
+  .brand small{
+    display:block;
+    font-size:.68rem;
+    font-weight:500;
+    color:var(--ink-soft);
+    letter-spacing:1px;
+  }
+  .main-nav{
+    margin-left:auto;
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+  }
+  .main-nav a{
+    padding:7px 13px;
+    border-radius:999px;
+    font-size:.93rem;
+    color:var(--ink-soft);
+    transition:.2s;
+  }
+  .main-nav a:hover{
+    background:var(--paper-2);
+    color:var(--warm-deep);
+  }
+
+  /* ---------- 首屏 ---------- */
+  .hero{
+    background:
+      radial-gradient(circle at 88% 12%, rgba(201,106,61,.12), transparent 55%),
+      linear-gradient(180deg,#fdfbf7 0%,#f6f1e7 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .hero-inner{
+    max-width:1160px;
+    margin:0 auto;
+    padding:52px 20px 46px;
+    display:grid;
+    grid-template-columns:1.25fr .95fr;
+    gap:44px;
+    align-items:center;
+  }
+  .hero-tag{
+    display:inline-block;
+    background:var(--green-soft);
+    color:var(--green);
+    font-size:.8rem;
+    padding:4px 12px;
+    border-radius:999px;
+    letter-spacing:.5px;
+    margin-bottom:16px;
+  }
+  .hero h1{
+    font-size:clamp(1.7rem,3.4vw,2.5rem);
+    letter-spacing:.5px;
+    color:#26302f;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--warm-deep);
+    border-bottom:4px solid rgba(201,106,61,.25);
+  }
+  .hero-lead{
+    font-size:1.02rem;
+    color:var(--ink-soft);
+    max-width:34em;
+  }
+  .hero-actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:22px;
+  }
+  .btn{
+    display:inline-block;
+    padding:11px 22px;
+    border-radius:999px;
+    font-size:.95rem;
+    font-weight:600;
+    transition:.2s;
+    border:1px solid transparent;
+  }
+  .btn-primary{
+    background:var(--warm);
+    color:#fff;
+    box-shadow:0 6px 16px rgba(201,106,61,.28);
+  }
+  .btn-primary:hover{background:var(--warm-deep);}
+  .btn-ghost{
+    background:#fff;
+    border-color:var(--line);
+    color:var(--ink);
+  }
+  .btn-ghost:hover{border-color:var(--warm);color:var(--warm-deep);}
+
+  .hero-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px 24px 20px;
+    box-shadow:var(--shadow);
+  }
+  .hero-card h2{
+    font-size:1rem;
+    color:var(--green);
+    letter-spacing:1px;
+    margin-bottom:14px;
+  }
+  .hero-card ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  .hero-card li{
+    display:flex;
+    gap:10px;
+    padding:9px 0;
+    border-bottom:1px dashed var(--line);
+    font-size:.93rem;
+    color:var(--ink-soft);
+  }
+  .hero-card li:last-child{border-bottom:none;}
+  .hero-card li span{
+    color:var(--warm);
+    font-weight:800;
+    flex:0 0 auto;
+  }
+
+  /* ---------- 通用区块 ---------- */
+  .wrap{
+    max-width:1160px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+  section.block{
+    padding:56px 0;
+    border-bottom:1px solid var(--line);
+  }
+  section.block:last-of-type{border-bottom:none;}
+  .block-head{
+    max-width:760px;
+    margin-bottom:32px;
+  }
+  .block-head .eyebrow{
+    font-size:.8rem;
+    letter-spacing:2px;
+    color:var(--warm);
+    font-weight:700;
+    display:block;
+    margin-bottom:8px;
+  }
+  .block-head h2{
+    font-size:clamp(1.35rem,2.4vw,1.75rem);
+    color:#26302f;
+  }
+  .block-head p{
+    color:var(--ink-soft);
+    margin-bottom:0;
+  }
+
+  /* ---------- 场景卡片 ---------- */
+  .scene-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
+    gap:20px;
+  }
+  .scene-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px 22px 18px;
+    transition:.25s;
+  }
+  .scene-card:hover{
+    transform:translateY(-3px);
+    box-shadow:var(--shadow);
+    border-color:#e8d9c4;
+  }
+  .scene-card .num{
+    font-size:.78rem;
+    font-weight:800;
+    color:var(--warm);
+    letter-spacing:1px;
+  }
+  .scene-card h3{
+    font-size:1.05rem;
+    margin:8px 0 8px;
+  }
+  .scene-card p{
+    font-size:.92rem;
+    color:var(--ink-soft);
+    margin-bottom:0;
+  }
+
+  /* ---------- 陪考要点 ---------- */
+  .tips-layout{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:36px;
+    align-items:start;
+  }
+  .tip-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  .tip-list li{
+    background:#fff;
+    border:1px solid var(--line);
+    border-left:4px solid var(--green);
+    border-radius:10px;
+    padding:15px 18px;
+    margin-bottom:12px;
+    font-size:.94rem;
+    color:var(--ink-soft);
+  }
+  .tip-list li strong{
+    display:block;
+    color:var(--ink);
+    font-size:1rem;
+    margin-bottom:3px;
+  }
+  .aside-note{
+    background:var(--paper-2);
+    border-radius:var(--radius);
+    padding:24px;
+    border:1px solid var(--line);
+  }
+  .aside-note h3{
+    font-size:1.05rem;
+    color:var(--warm-deep);
+  }
+  .aside-note p,.aside-note li{
+    font-size:.92rem;
+    color:var(--ink-soft);
+  }
+  .aside-note ul{padding-left:1.1em;}
+
+  /* ---------- 沟通对话表 ---------- */
+  .talk-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    font-size:.93rem;
+  }
+  .talk-table th{
+    background:var(--green-soft);
+    color:var(--green);
+    text-align:left;
+    padding:13px 16px;
+    font-size:.88rem;
+    letter-spacing:.5px;
+  }
+  .talk-table td{
+    padding:13px 16px;
+    border-top:1px solid var(--line);
+    color:var(--ink-soft);
+    vertical-align:top;
+  }
+  .talk-table td:first-child{
+    color:var(--ink);
+    font-weight:600;
+    width:38%;
+  }
+  .table-scroll{overflow-x:auto;}
+
+  /* ---------- 时间轴 ---------- */
+  .timeline{
+    position:relative;
+    padding-left:28px;
+    border-left:2px dashed #d9cdb8;
+  }
+  .timeline-item{
+    position:relative;
+    padding-bottom:26px;
+  }
+  .timeline-item:last-child{padding-bottom:0;}
+  .timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-35px;
+    top:6px;
+    width:12px;height:12px;
+    border-radius:50%;
+    background:var(--warm);
+    border:3px solid var(--paper);
+    box-shadow:0 0 0 1px var(--warm);
+  }
+  .timeline-item h3{
+    font-size:1rem;
+    margin-bottom:4px;
+  }
+  .timeline-item p{
+    font-size:.92rem;
+    color:var(--ink-soft);
+    margin-bottom:0;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-list{
+    display:grid;
+    gap:12px;
+  }
+  details.faq{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:16px 20px;
+  }
+  details.faq summary{
+    cursor:pointer;
+    font-weight:600;
+    font-size:.98rem;
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    align-items:flex-start;
+  }
+  details.faq summary::-webkit-details-marker{display:none;}
+  details.faq summary::after{
+    content:"＋";
+    color:var(--warm);
+    font-weight:700;
+    flex:0 0 auto;
+  }
+  details.faq[open] summary::after{content:"－";}
+  details.faq p{
+    margin:12px 0 0;
+    font-size:.92rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- 资源栏 ---------- */
+  .resource-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:18px;
+  }
+  .resource-card{
+    background:linear-gradient(180deg,#fff, #fdfaf4);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:20px;
+  }
+  .resource-card h3{
+    font-size:1rem;
+    color:var(--green);
+    margin-bottom:8px;
+  }
+  .resource-card p{
+    font-size:.9rem;
+    color:var(--ink-soft);
+    margin-bottom:0;
+  }
+
+  /* ---------- 页脚 ---------- */
+  .site-footer{
+    background:#2f3a3f;
+    color:#c8d0d2;
+    padding:44px 0 26px;
+    font-size:.9rem;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:30px;
+    margin-bottom:28px;
+  }
+  .site-footer h4{
+    color:#fff;
+    font-size:.95rem;
+    margin-bottom:12px;
+    letter-spacing:.5px;
+  }
+  .site-footer p{color:#9aa6a9;margin-bottom:.7em;}
+  .site-footer ul{list-style:none;padding:0;margin:0;}
+  .site-footer li{margin-bottom:7px;}
+  .site-footer a{color:#c8d0d2;transition:.2s;}
+  .site-footer a:hover{color:#e0a06a;}
+  .footer-bottom{
+    border-top:1px solid #465256;
+    padding-top:18px;
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+    color:#8a9599;
+    font-size:.82rem;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:900px){
+    .hero-inner{grid-template-columns:1fr;gap:30px;padding:40px 20px 36px;}
+    .tips-layout{grid-template-columns:1fr;gap:26px;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:620px){
+    body{font-size:15.5px;}
+    .header-inner{padding:12px 16px;gap:10px;}
+    .main-nav a{padding:6px 10px;font-size:.88rem;}
+    .brand small{display:none;}
+    section.block{padding:40px 0;}
+    .footer-grid{grid-template-columns:1fr;}
+    .talk-table td:first-child{width:44%;}
+    .footer-bottom{flex-direction:column;gap:6px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark">陪考</span>
+      <span>奶奶陪考留守孙女
+        <small>祖辈陪读 · 家庭支持参考</small>
+      </span>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#scene">现实场景</a>
+      <a href="#tips">陪考要点</a>
+      <a href="#talk">沟通方式</a>
+      <a href="#timeline">考前节奏</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-tag">留守家庭 · 祖辈陪护</span>
+        <h1>奶奶陪考留守孙女，<em>关键是把生活照顾好、把情绪稳住</em></h1>
+        <p class="hero-lead">
+          父母在外务工，奶奶在家陪孙女读书、备考，是很多家庭真实的生活状态。陪考不等于替孩子学习，
+          更多是在吃饭、作息、情绪和临考安排上做扎实的后方支持。本页围绕这一场景，整理可操作的做法与注意事项。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tips">查看陪考要点</a>
+          <a class="btn btn-ghost" href="#faq">先看常见问题</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2>陪考最常被忽略的四件事</h2>
+        <ul>
+          <li><span>01</span>把“别紧张”换成具体的关心，孩子更容易接受</li>
+          <li><span>02</span>考前饮食不要突然大补，保持日常习惯更稳妥</li>
+          <li><span>03</span>作息尽量提前稳定，而不是临考几天才调整</li>
+          <li><span>04</span>奶奶自己也要休息好，情绪稳定本身就是支持</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 现实场景 -->
+  <section class="block" id="scene">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="eyebrow">SCENE</span>
+        <h2>奶奶陪考，通常面对的是哪几种情况</h2>
+        <p>不同家庭的陪考压力差别很大。先看清自己属于哪一种，再决定把精力放在哪里，往往比盲目忙碌更有效。</p>
+      </div>
+      <div class="scene-grid">
+        <article class="scene-card">
+          <span class="num">场景一</span>
+          <h3>日常陪读型</h3>
+          <p>父母长期在外，奶奶负责一日三餐、接送和日常看护。重点是把生活节奏维持稳定，减少孩子因琐事分心。</p>
+        </article>
+        <article class="scene-card">
+          <span class="num">场景二</span>
+          <h3>考前冲刺型</h3>
+          <p>临近中考、高考或期末，奶奶临时加强照顾。此时不宜大幅改变原有安排，稳定比“用力过猛”更重要。</p>
+        </article>
+        <article class="scene-card">
+          <span class="num">场景三</span>
+          <h3>异地陪考型</h3>
+          <p>需要到考点附近住宿或跨区赶考。提前熟悉路线、天气和住宿条件，能明显减少临场慌乱。</p>
+        </article>
+        <article class="scene-card">
+          <span class="num">场景四</span>
+          <h3>多孩兼顾型</h3>
+          <p>家里不止一个孩子需要照顾。合理分配时间，避免让备考的孩子感到被忽视，也避免老人过度劳累。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 陪考要点 -->
+  <section class="block" id="tips">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="eyebrow">KEY POINTS</span>
+        <h2>陪考期间，奶奶可以重点做好的几件事</h2>
+        <p>陪考的核心不是监督学习，而是让孙女在生活上省心、在情绪上放松。以下要点按实际可执行程度排列。</p>
+      </div>
+      <div class="tips-layout">
+        <ul class="tip-list">
+          <li>
+            <strong>饮食保持日常，不突然大补</strong>
+            考前突然换食谱、加补品，容易引起肠胃不适。按平时习惯做清淡、熟透、孩子吃得惯的饭菜更稳妥。
+          </li>
+          <li>
+            <strong>作息提前稳定，而不是临考才调</strong>
+            建议在考试前一段时间就固定起床和入睡时间，让身体形成节奏，避免考前几天强行早睡反而睡不着。
+          </li>
+          <li>
+            <strong>少问成绩，多问感受</strong>
+            “今天累不累”“想吃点什么”这类具体关心，比反复追问分数和排名更容易让孩子开口。
+          </li>
+          <li>
+            <strong>把考试物品提前整理好</strong>
+            准考证、身份证、文具、水杯等提前一晚放好，放在固定位置，减少当天早上手忙脚乱。
+          </li>
+          <li>
+            <strong>提前熟悉考点路线</strong>
+            计算好出发时间，预留堵车和天气变化的余量。异地考试要提前确认住宿和用餐条件。
+          </li>
+          <li>
+            <strong>不把焦虑挂在脸上</strong>
+            老人的紧张孩子很容易察觉。该做的准备做好后，尽量保持平常语气和日常节奏。
+          </li>
+        </ul>
+        <aside class="aside-note">
+          <h3>奶奶自己也要被照顾</h3>
+          <p>陪考是一段消耗精力的过程，老人同样需要休息和情绪出口。</p>
+          <ul>
+            <li>保证自己的睡眠，不熬夜等孩子</li>
+            <li>和子女保持沟通，把情况说清楚，不独自硬扛</li>
+            <li>身体不适及时就医，不因“怕耽误孩子”而拖延</li>
+            <li>适当和邻里、亲友交流，避免长期闷在家里</li>
+          </ul>
+          <p style="margin-bottom:0;">照顾好自己的状态，本身就是对孙女最稳定的支持。</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 沟通方式 -->
+  <section class="block" id="talk">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="eyebrow">COMMUNICATION</span>
+        <h2>换一种说法，孩子更愿意听</h2>
+        <p>备考期的孩子情绪敏感，同样一句关心，表达方式不同，效果差别很大。下面是一些可以借鉴的表达替换。</p>
+      </div>
+      <div class="table-scroll">
+        <table class="talk-table">
+          <thead>
+            <tr>
+              <th scope="col">容易让孩子有压力的说法</th>
+              <th scope="col">可以尝试的替代说法</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>这次考不好怎么办？</td>
+              <td>先把今天该做的做完，结果等考完再说。</td>
+            </tr>
+            <tr>
+              <td>你看人家孩子多用功。</td>
+              <td>你按自己的节奏来，有需要就跟奶奶说。</td>
+            </tr>
+            <tr>
+              <td>全家的希望都在你身上。</td>
+              <td>家里的事你不用操心，安心准备就好。</td>
+            </tr>
+            <tr>
+              <td>怎么又在发呆，还不快去学？</td>
+              <td>累了就歇一会儿，喝点水再继续。</td>
+            </tr>
+            <tr>
+              <td>考不上就完了。</td>
+              <td>尽力去考，后面还有很多条路可以走。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 考前节奏 -->
+  <section class="block" id="timeline">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="eyebrow">RHYTHM</span>
+        <h2>考前一段时间，可以这样安排节奏</h2>
+        <p>把准备工作分散到不同阶段，比全部堆在考前几天更从容。以下时间为一般性参考，具体以孩子所在学校的安排为准。</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>考前一个月左右</h3>
+          <p>确认考试时间、考点位置和所需证件；逐步固定作息；观察孩子的情绪和身体状态，有明显异常及时和老师、父母沟通。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>考前一到两周</h3>
+          <p>确定出行方式和出发时间；如需异地住宿，提前订好并实地确认；饮食维持日常，不尝试没吃过的食物。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>考前一晚</h3>
+          <p>整理好证件和文具，放在固定位置；按平常时间休息，不刻意早睡；少谈考试内容，聊些轻松的话题。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>考试当天</h3>
+          <p>按计划时间出发，留出余量；早餐吃平时习惯的食物；送到考点后简短告别，不反复叮嘱，避免增加紧张感。</p>
+        </div>
+        <div class="timeline-item">
+          <h3>每科考完之后</h3>
+          <p>不追问考得怎么样、哪道题不会；准备好下一科需要的物品和休息环境，让孩子自己决定要不要对答案。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>关于奶奶陪考留守孙女，常见问题</h2>
+        <p>以下是这一场景中家长和老人问得比较多的问题，回答以稳妥、可操作为原则。</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq" open>
+          <summary>奶奶文化程度不高，能陪好考吗？</summary>
+          <p>陪考并不要求辅导功课。老人能做的关键事情是保证饮食、作息、物品准备和情绪稳定，这些与学历无关。学习上的问题可以交给学校老师和在外父母远程沟通解决。</p>
+        </details>
+        <details class="faq">
+          <summary>孩子考前情绪低落，奶奶该怎么处理？</summary>
+          <p>先倾听，不急着讲道理或反驳。可以问问具体是担心什么，是题目难度、同学关系还是想父母。如果情绪持续低落、影响睡眠和吃饭，建议及时联系父母和班主任，必要时寻求学校心理老师的帮助。</p>
+        </details>
+        <details class="faq">
+          <summary>要不要在考前给孩子买补品？</summary>
+          <p>一般不建议在考前突然增加补品或改变饮食结构。肠胃需要适应，临时变化反而可能带来不适。保持平时的饮食，注意食材新鲜、做熟做透、荤素搭配即可。</p>
+        </details>
+        <details class="faq">
+          <summary>父母不在身边，怎么让孩子感到被支持？</summary>
+          <p>父母可以固定时间视频或通话，但避免每次只问成绩。聊聊生活、听听孩子的日常，让孩子知道父母在关注自己，而不是只关注分数。奶奶也可以在孩子愿意时，转达父母的关心。</p>
+        </details>
+        <details class="faq">
+          <summary>考试当天奶奶要不要一直守在考点外？</summary>
+          <p>可以根据天气和距离决定。如果天气炎热或寒冷，长时间守候对老人身体不利，也可能让孩子分心。约定好接送时间和地点，回家准备下一科的休息环境，往往更实际。</p>
+        </details>
+        <details class="faq">
+          <summary>陪考期间奶奶和子女意见不一致怎么办？</summary>
+          <p>尽量提前沟通，把各自负责的部分说清楚，比如谁管费用、谁管接送、谁和老师联系。遇到分歧时以孩子的实际感受和学校安排为准，避免在孩子面前争执。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 延伸参考 -->
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <span class="eyebrow">MORE</span>
+        <h2>还可以从这些方向继续了解</h2>
+        <p>如果希望把陪考做得更细致，可以关注以下几类信息，具体内容以当地学校和相关部门发布为准。</p>
+      </div>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <h3>学校通知与考试安排</h3>
+          <p>考试时间、考点、证件要求等，以学校正式通知为准，建议家长和奶奶都留一份纸质或截图备份。</p>
+        </div>
+        <div class="resource-card">
+          <h3>青少年心理支持</h3>
+          <p>学校心理老师、当地未成年人心理辅导机构，都可以在情绪问题持续时提供专业帮助。</p>
+        </div>
+        <div class="resource-card">
+          <h3>留守家庭相关政策</h3>
+          <p>部分地区对留守儿童有关爱服务，可向社区、村委会或学校了解本地具体措施。</p>
+        </div>
+        <div class="resource-card">
+          <h3>老人健康与照护</h3>
+          <p>陪考期间老人若出现慢性病波动，应及时就医，不因照顾孩子而延误自己的治疗。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>奶奶陪考留守孙女</h4>
+        <p>围绕祖辈陪读、陪考这一现实场景，整理生活安排、情绪支持和考前准备方面的务实参考，帮助留守家庭把后方照顾好。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#scene">现实场景</a></li>
+          <li><a href="#tips">陪考要点</a></li>
+          <li><a href="#talk">沟通方式</a></li>
+          <li><a href="#timeline">考前节奏</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>温馨提示</h4>
+        <ul>
+          <li>考试安排以学校通知为准</li>
+          <li>情绪问题持续请寻求专业帮助</li>
+          <li>老人健康同样需要被重视</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>本页内容为一般性经验整理，不构成医疗、心理或教育专业意见。</span>
+      <span>奶奶陪考留守孙女 · 家庭支持参考</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var faqs = document.querySelectorAll('details.faq');
+    faqs.forEach(function(item){
+      item.addEventListener('toggle', function(){
+        if(item.open){
+          faqs.forEach(function(other){
+            if(other !== item){ other.open = false; }
+          });
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+      </html>
