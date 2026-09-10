@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>粤语学习网 - 零基础粤语入门教程与日常口语学习指南</title>
+<meta name="description" content="粤语学习网提供零基础粤语入门教程，涵盖粤语拼音、九声六调、日常口语、常用词汇、港剧台词和粤语歌曲学习资源，帮助普通话使用者系统掌握广东话听说能力。">
+<meta name="keywords" content="粤语学习网,粤语学习,粤语入门,广东话学习,粤语拼音,粤语九声六调,粤语日常口语,粤语教程">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#1c2430;
+    --ink-soft:#4a5568;
+    --line:#e3e8ef;
+    --bg:#f6f8fb;
+    --white:#ffffff;
+    --brand:#c0392b;
+    --brand-deep:#8e2418;
+    --brand-soft:#fdf0ee;
+    --gold:#c99a2e;
+    --radius:14px;
+    --shadow:0 6px 22px rgba(28,36,48,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px;}
+
+  /* ---------- 顶部 ---------- */
+  .topbar{
+    background:var(--ink);
+    color:#c8d2e0;
+    font-size:13px;
+  }
+  .topbar .wrap{
+    display:flex;justify-content:space-between;align-items:center;
+    min-height:38px;gap:12px;flex-wrap:wrap;
+  }
+  .topbar span.dot{color:var(--gold);margin-right:6px;}
+
+  header.site-head{
+    background:var(--white);
+    border-bottom:1px solid var(--line);
+    position:sticky;top:0;z-index:50;
+  }
+  .head-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:20px;min-height:72px;
+  }
+  .logo{display:flex;align-items:center;gap:12px;flex-shrink:0;}
+  .logo-mark{
+    width:44px;height:44px;border-radius:12px;
+    background:linear-gradient(140deg,var(--brand),var(--brand-deep));
+    color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:20px;font-weight:700;letter-spacing:1px;
+    box-shadow:0 4px 12px rgba(192,57,43,.28);
+  }
+  .logo-text b{display:block;font-size:19px;letter-spacing:.5px;}
+  .logo-text small{display:block;font-size:12px;color:var(--ink-soft);letter-spacing:2px;}
+
+  nav.main-nav ul{display:flex;list-style:none;gap:6px;flex-wrap:wrap;}
+  nav.main-nav a{
+    display:block;padding:8px 14px;border-radius:10px;
+    font-size:15px;color:var(--ink-soft);transition:.2s;
+  }
+  nav.main-nav a:hover,nav.main-nav a.active{
+    background:var(--brand-soft);color:var(--brand-deep);font-weight:600;
+  }
+
+  /* ---------- 首屏 ---------- */
+  .hero{
+    background:
+      radial-gradient(circle at 88% 12%,rgba(201,154,46,.16),transparent 42%),
+      linear-gradient(160deg,#fffaf9 0%,#fdf0ee 58%,#f7f9fc 100%);
+    border-bottom:1px solid var(--line);
+    padding:56px 0 52px;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;
+  }
+  .hero-tag{
+    display:inline-block;background:var(--white);border:1px solid #f0d5d0;
+    color:var(--brand-deep);font-size:13px;padding:5px 14px;border-radius:999px;
+    margin-bottom:18px;letter-spacing:.5px;
+  }
+  .hero h1{
+    font-size:38px;line-height:1.32;letter-spacing:-.5px;margin-bottom:18px;
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--brand);
+    border-bottom:4px solid rgba(201,154,46,.45);
+  }
+  .hero p.lead{
+    font-size:16.5px;color:var(--ink-soft);max-width:52ch;margin-bottom:26px;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:12px 26px;border-radius:999px;
+    font-size:15px;font-weight:600;transition:.22s;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 16px rgba(192,57,43,.26);}
+  .btn-primary:hover{background:var(--brand-deep);transform:translateY(-1px);}
+  .btn-ghost{background:var(--white);border-color:var(--line);color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--brand);color:var(--brand-deep);}
+
+  .tone-card{
+    background:var(--white);border:1px solid var(--line);border-radius:18px;
+    padding:26px 24px;box-shadow:var(--shadow);
+  }
+  .tone-card h3{font-size:16px;margin-bottom:6px;}
+  .tone-card p.tip{font-size:13px;color:var(--ink-soft);margin-bottom:18px;}
+  .tone-row{
+    display:flex;align-items:center;gap:14px;padding:9px 0;
+    border-bottom:1px dashed var(--line);
+  }
+  .tone-row:last-child{border-bottom:none;}
+  .tone-num{
+    width:34px;height:34px;flex-shrink:0;border-radius:9px;
+    background:var(--brand-soft);color:var(--brand-deep);
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;
+  }
+  .tone-row b{font-size:15px;}
+  .tone-row span{font-size:13px;color:var(--ink-soft);margin-left:auto;text-align:right;}
+
+  /* ---------- 通用区块 ---------- */
+  section{padding:52px 0;}
+  .sec-head{margin-bottom:28px;}
+  .sec-head .kicker{
+    font-size:13px;letter-spacing:3px;color:var(--gold);font-weight:700;
+    text-transform:uppercase;margin-bottom:8px;
+  }
+  .sec-head h2{font-size:26px;letter-spacing:-.3px;margin-bottom:10px;}
+  .sec-head p{color:var(--ink-soft);font-size:15px;max-width:70ch;}
+
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+
+  .card{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 22px;transition:.22s;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#f0d5d0;}
+  .card .badge{
+    display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;
+    border-radius:6px;background:var(--brand-soft);color:var(--brand-deep);margin-bottom:12px;
+  }
+  .card h3{font-size:17.5px;margin-bottom:10px;}
+  .card p{font-size:14.5px;color:var(--ink-soft);}
+  .card ul{margin-top:12px;padding-left:18px;font-size:14.5px;color:var(--ink-soft);}
+  .card ul li{margin-bottom:6px;}
+
+  /* ---------- 学习路径 ---------- */
+  .path{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .path-list{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:8px;}
+  .path-item{
+    padding:26px 20px;border-right:1px solid var(--line);position:relative;
+  }
+  .path-item:last-child{border-right:none;}
+  .path-item .step{
+    font-size:13px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:10px;
+  }
+  .path-item h3{font-size:17px;margin-bottom:8px;}
+  .path-item p{font-size:14px;color:var(--ink-soft);}
+
+  /* ---------- 词汇表 ---------- */
+  .vocab-table{
+    width:100%;border-collapse:collapse;background:var(--white);
+    border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+    font-size:14.5px;
+  }
+  .vocab-table th{
+    background:#fbfcfe;text-align:left;padding:13px 18px;
+    font-size:13.5px;color:var(--ink-soft);font-weight:600;border-bottom:1px solid var(--line);
+  }
+  .vocab-table td{padding:13px 18px;border-bottom:1px solid var(--line);}
+  .vocab-table tr:last-child td{border-bottom:none;}
+  .vocab-table td.jyut{color:var(--brand-deep);font-weight:600;letter-spacing:.3px;}
+  .vocab-table td.note{color:var(--ink-soft);font-size:13.5px;}
+
+  /* ---------- 资源列表 ---------- */
+  .res-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .res-item{
+    display:flex;gap:16px;background:var(--white);border:1px solid var(--line);
+    border-radius:var(--radius);padding:20px;transition:.22s;
+  }
+  .res-item:hover{border-color:#f0d5d0;box-shadow:var(--shadow);}
+  .res-icon{
+    width:46px;height:46px;flex-shrink:0;border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px;font-weight:700;color:#fff;
+    background:linear-gradient(140deg,var(--brand),var(--brand-deep));
+  }
+  .res-item h3{font-size:16px;margin-bottom:6px;}
+  .res-item p{font-size:14px;color:var(--ink-soft);}
+
+  /* ---------- 侧栏+正文 ---------- */
+  .split{display:grid;grid-template-columns:1fr 320px;gap:34px;align-items:start;}
+  .article-box{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+    padding:30px 28px;
+  }
+  .article-box h2{font-size:22px;margin-bottom:16px;}
+  .article-box h3{font-size:17px;margin:22px 0 8px;}
+  .article-box p{font-size:15px;color:var(--ink-soft);margin-bottom:12px;}
+  .article-box ul{padding-left:20px;font-size:15px;color:var(--ink-soft);margin-bottom:12px;}
+  .article-box ul li{margin-bottom:7px;}
+
+  aside.side{display:flex;flex-direction:column;gap:20px;}
+  .side-box{
+    background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 20px;
+  }
+  .side-box h3{font-size:16px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--line);}
+  .side-box ol{padding-left:20px;font-size:14.5px;color:var(--ink-soft);}
+  .side-box ol li{margin-bottom:9px;}
+  .side-box .mini{font-size:13.5px;color:var(--ink-soft);line-height:1.7;}
+  .tag-cloud{display:flex;flex-wrap:wrap;gap:8px;}
+  .tag-cloud span{
+    font-size:13px;padding:5px 11px;border-radius:8px;
+    background:var(--brand-soft);color:var(--brand-deep);
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .faq-list{display:grid;gap:14px;max-width:900px;}
+  details{
+    background:var(--bg);border:1px solid var(--line);border-radius:12px;
+    padding:16px 20px;transition:.2s;
+  }
+  details[open]{background:var(--white);border-color:#f0d5d0;box-shadow:var(--shadow);}
+  summary{
+    cursor:pointer;font-size:15.5px;font-weight:600;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{
+    content:"+";font-size:19px;color:var(--brand);font-weight:400;flex-shrink:0;
+  }
+  details[open] summary::after{content:"−";}
+  details p{font-size:14.5px;color:var(--ink-soft);margin-top:12px;}
+
+  /* ---------- 页脚 ---------- */
+  footer.site-foot{
+    background:var(--ink);color:#9aa7b8;padding:48px 0 26px;font-size:14px;
+  }
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;}
+  .foot-grid h4{color:#fff;font-size:15px;margin-bottom:14px;}
+  .foot-grid p{font-size:13.5px;line-height:1.8;color:#8b98aa;}
+  .foot-grid ul{list-style:none;}
+  .foot-grid ul li{margin-bottom:9px;}
+  .foot-grid ul a{font-size:13.5px;color:#9aa7b8;transition:.2s;}
+  .foot-grid ul a:hover{color:#fff;}
+  .foot-bottom{
+    margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.09);
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    font-size:13px;color:#7d8a9c;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:1024px){
+    .hero-grid{grid-template-columns:1fr;gap:34px;}
+    .path-list{grid-template-columns:repeat(2,1fr);}
+    .path-item:nth-child(2){border-right:none;}
+    .path-item:nth-child(1),.path-item:nth-child(2){border-bottom:1px solid var(--line);}
+    .split{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:768px){
+    .head-inner{flex-direction:column;align-items:flex-start;padding:14px 0;gap:12px;}
+    nav.main-nav ul{gap:2px;}
+    nav.main-nav a{padding:7px 10px;font-size:14px;}
+    .hero{padding:38px 0 40px;}
+    .hero h1{font-size:27px;}
+    .hero p.lead{font-size:15.5px;}
+    .grid-3,.grid-2,.res-list{grid-template-columns:1fr;}
+    .path-list{grid-template-columns:1fr;}
+    .path-item{border-right:none;border-bottom:1px solid var(--line);}
+    .path-item:last-child{border-bottom:none;}
+    .sec-head h2{font-size:22px;}
+    section{padding:38px 0;}
+    .vocab-table th:nth-child(3),.vocab-table td:nth-child(3){display:none;}
+    .foot-grid{grid-template-columns:1fr;}
+    .article-box{padding:24px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><span class="dot">●</span>面向普通话使用者的粤语自学平台 · 内容持续整理更新</span>
+    <span>拼音标注 · 声调示范 · 场景口语</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">粤</span>
+      <span class="logo-text">
+        <b>粤语学习网</b>
+        <small>CANTO LEARNING</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a class="active" href="#top">首页</a></li>
+        <li><a href="#path">学习路径</a></li>
+        <li><a href="#pinyin">拼音声调</a></li>
+        <li><a href="#vocab">常用词汇</a></li>
+        <li><a href="#resource">学习资源</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-tag">零基础也能开始的粤语自学路线</span>
+        <h1>从听懂一句<em>广东话</em>开始，系统学好粤语</h1>
+        <p class="lead">
+          粤语学习网为普通话使用者整理了一条清晰的自学路线：先认识粤语拼音与声调，再积累高频口语词，接着进入生活场景对话，最后借助港剧、粤语歌和新闻材料做真实语感训练。不依赖死记硬背，按顺序推进即可。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#path">查看学习路径</a>
+          <a class="btn btn-ghost" href="#pinyin">先学粤语拼音</a>
+        </div>
+      </div>
+      <div class="tone-card">
+        <h3>粤语九声六调速览</h3>
+        <p class="tip">粤语声调比普通话多，声调区分词义，是入门第一关。</p>
+        <div class="tone-row"><span class="tone-num">1</span><b>阴平</b><span>高而平，如「诗」</span></div>
+        <div class="tone-row"><span class="tone-num">2</span><b>阴上</b><span>由中升高，如「史」</span></div>
+        <div class="tone-row"><span class="tone-num">3</span><b>阴去</b><span>中平，如「试」</span></div>
+        <div class="tone-row"><span class="tone-num">4</span><b>阳平</b><span>低而下降，如「时」</span></div>
+        <div class="tone-row"><span class="tone-num">5</span><b>阳上</b><span>低升，如「市」</span></div>
+        <div class="tone-row"><span class="tone-num">6</span><b>阳去</b><span>低平，如「事」</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 学习路径 -->
+  <section class="path" id="path">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Learning Path</div>
+        <h2>粤语自学四步走</h2>
+        <p>粤语和普通话同源，语法差异不算大，难点主要在发音、声调和口语用词。按下面四个阶段推进，比零散地背单词更有效率。</p>
+      </div>
+      <div class="path-list">
+        <div class="path-item">
+          <div class="step">STEP 01</div>
+          <h3>建立发音基础</h3>
+          <p>先掌握粤语拼音方案（常用的是粤拼 Jyutping），分清声母、韵母和入声韵尾 -p、-t、-k，再逐组练习六个基本调值。</p>
+        </div>
+        <div class="path-item">
+          <div class="step">STEP 02</div>
+          <h3>积累高频口语词</h3>
+          <p>从人称代词、数字、时间、饮食、交通等日常词入手，重点记那些和普通话说法完全不同的词，例如「食饭」「睇」「嘅」。</p>
+        </div>
+        <div class="path-item">
+          <div class="step">STEP 03</div>
+          <h3>进入场景对话</h3>
+          <p>围绕点餐、问路、购物、坐车、打电话等真实场景练整句表达，同时熟悉粤语特有的语气助词和句式习惯。</p>
+        </div>
+        <div class="path-item">
+          <div class="step">STEP 04</div>
+          <h3>输入真实语料</h3>
+          <p>用港剧、粤语歌、电台节目和新闻做大量听力输入，把学过的词句放回真实语境中反复验证和巩固。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 拼音与声调 -->
+  <section id="pinyin">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Pronunciation</div>
+        <h2>粤语拼音与声调入门要点</h2>
+        <p>粤语学习网建议把拼音当作工具而不是目的：它的作用是让你在没人示范时也能查准读音、记住声调。</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <span class="badge">声母</span>
+          <h3>注意普通话里没有的音</h3>
+          <p>粤语保留了部分中古音特点，声母系统与普通话不完全对应。学习时重点关注 ng- 开头的鼻音声母，以及 gw-、kw- 这类圆唇化的舌根音。</p>
+          <ul>
+            <li>ng- 常见于「我」「牙」「眼」等字</li>
+            <li>gw-、kw- 出现在「国」「关」「裙」等字</li>
+            <li>部分字在粤语中仍读 n-，普通话已变 l-</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="badge">韵母</span>
+          <h3>入声韵尾是关键难点</h3>
+          <p>粤语保留了 -p、-t、-k 三种入声韵尾，发音短促、有阻塞感，普通话中已经没有对应形式，需要单独练习。</p>
+          <ul>
+            <li>-p 结尾：如「十」「合」</li>
+            <li>-t 结尾：如「一」「八」</li>
+            <li>-k 结尾：如「六」「百」</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="badge">声调</span>
+          <h3>先分清调值再记调号</h3>
+          <p>粤拼用数字 1 至 6 标注声调。与其死记数字，不如先跟着示范听辨调值高低走向，把「诗史试时市事」这组经典例字读顺。</p>
+          <ul>
+            <li>1、3、6 调相对平稳，靠高低区分</li>
+            <li>2、5 调都是升调，起点不同</li>
+            <li>4 调是低降调，容易与 6 调混淆</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常用词汇 -->
+  <section id="vocab">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Vocabulary</div>
+        <h2>高频粤语词汇对照表</h2>
+        <p>下表选取的是日常出现频率最高、且与普通话说法差异明显的一批词。建议先记词义和用法，读音结合拼音逐个确认。</p>
+      </div>
+      <table class="vocab-table">
+        <thead>
+          <tr>
+            <th style="width:22%">粤语写法</th>
+            <th style="width:24%">普通话说法</th>
+            <th>用法说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="jyut">食饭</td><td>吃饭</td><td class="note">粤语中「食」使用范围比普通话的「吃」更广，喝茶、抽烟也可用「食」。</td></tr>
+          <tr><td class="jyut">睇</td><td>看</td><td class="note">表示看、观看，如「睇戏」「睇医生」，后者意为去看病。</td></tr>
+          <tr><td class="jyut">嘅</td><td>的</td><td class="note">结构助词，用法与普通话「的」相近，是粤语书面表达中的常用字。</td></tr>
+          <tr><td class="jyut">唔</td><td>不</td><td class="note">否定副词，如「唔知」「唔好」，是粤语最基础的否定形式。</td></tr>
+          <tr><td class="jyut">佢</td><td>他 / 她 / 它</td><td class="note">第三人称代词，不分性别与物类，单复数靠加「哋」区分。</td></tr>
+          <tr><td class="jyut">边度</td><td>哪里</td><td class="note">疑问代词，问地点时使用，如「你去边度」。</td></tr>
+          <tr><td class="jyut">几多</td><td>多少</td><td class="note">询问数量或价格，如「几多钱」。</td></tr>
+          <tr><td class="jyut">而家</td><td>现在</td><td class="note">表示当前时间，口语中使用频率很高。</td></tr>
+          <tr><td class="jyut">多谢 / 唔该</td><td>谢谢</td><td class="note">「多谢」多用于接受馈赠，「唔该」多用于接受服务或麻烦他人。</td></tr>
+          <tr><td class="jyut">得闲</td><td>有空</td><td class="note">表示有时间，如「你得唔得闲」，是约人时的常用说法。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 正文 + 侧栏 -->
+  <section>
+    <div class="wrap split">
+      <article class="article-box">
+        <h2>粤语学习常见误区与实用建议</h2>
+        <p>很多人在粤语学习网上浏览了不少资料，却始终开不了口，问题通常不在记忆力，而在方法和顺序。下面几点是自学过程中最容易被忽略的地方。</p>
+
+        <h3>一、不要用普通话发音去套粤语</h3>
+        <p>粤语和普通话虽然都是汉语方言，但语音系统差异明显。用普通话的读音去近似粤语，容易形成难以纠正的习惯。正确做法是从拼音入手，把每个字的声母、韵母、声调分开确认，再连起来读。</p>
+
+        <h3>二、声调要单独练，不能顺带学</h3>
+        <p>粤语声调区分词义，调值读错就可能变成另一个词。建议集中一段时间专门练调，用同一组声母韵母搭配不同声调反复对比，例如用「si」配合六个调值练习，直到能稳定听辨和模仿。</p>
+
+        <h3>三、词汇要按使用场景记</h3>
+        <p>孤立地背词表效率不高。把词放进具体场景里记，比如把「唔该」「多谢」「几多钱」「平啲得唔得」放在购物场景中一起记，既能记住意思，也能记住搭配和语气。</p>
+
+        <h3>四、听力输入要长期坚持</h3>
+        <p>粤语的语速和连读现象较多，短期突击很难适应。可以每天固定听一段港剧对白或粤语新闻，先看字幕理解内容，再脱离字幕听，最后跟读模仿语调。这个过程需要持续数周以上才会明显见效。</p>
+
+        <h3>五、开口比完美更重要</h3>
+        <p>初学者常因怕说错而不敢开口。实际上，粤语母语者对非母语使用者的容错度较高，只要关键词和声调大致正确，交流通常可以顺利进行。先建立表达信心，再逐步修正细节。</p>
+
+        <h3>六、注意书面语与口语的区别</h3>
+        <p>粤语的书面表达和口语表达存在一定差距。香港的正式书面语接近普通话书面语，而日常口语中大量使用粤语特有字词。学习时应明确自己当前的目标是听懂口语，还是阅读粤语书面内容，两者的学习材料并不完全相同。</p>
+      </article>
+
+      <aside class="side">
+        <div class="side-box">
+          <h3>新手推荐顺序</h3>
+          <ol>
+            <li>认识粤拼方案，能查字读音</li>
+            <li>练六个基本调值，能听辨高低</li>
+            <li>记 100 个左右高频口语词</li>
+            <li>练 10 组日常场景短对话</li>
+            <li>开始每天固定听力输入</li>
+          </ol>
+        </div>
+        <div class="side-box">
+          <h3>适合的练习材料</h3>
+          <p class="mini">
+            入门阶段可选带字幕的港剧生活片段、粤语儿童节目、慢速新闻播报；进阶阶段可尝试电台访谈、粤语歌歌词跟读以及无字幕剧集。材料难度应略高于当前水平，但不能高出太多。
+          </p>
+        </div>
+        <div class="side-box">
+          <h3>相关学习方向</h3>
+          <div class="tag-cloud">
+            <span>粤语拼音</span>
+            <span>九声六调</span>
+            <span>日常口语</span>
+            <span>港剧台词</span>
+            <span>粤语歌曲</span>
+            <span>入声韵尾</span>
+            <span>语气助词</span>
+            <span>粤语书面语</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 学习资源 -->
+  <section id="resource" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Resources</div>
+        <h2>粤语学习资源分类</h2>
+        <p>不同学习目标对应不同类型的材料。下面按用途分类整理，方便按需选择。</p>
+      </div>
+      <div class="res-list">
+        <div class="res-item">
+          <div class="res-icon">音</div>
+          <div>
+            <h3>发音与拼音工具</h3>
+            <p>用于查字读音、确认声调。适合在遇到生字时快速核对，避免凭印象读错。</p>
+          </div>
+        </div>
+        <div class="res-item">
+          <div class="res-icon">词</div>
+          <div>
+            <h3>词汇与短语手册</h3>
+            <p>按场景分类整理常用词和固定搭配，适合出行前集中准备或日常查漏补缺。</p>
+          </div>
+        </div>
+        <div class="res-item">
+          <div class="res-icon">听</div>
+          <div>
+            <h3>听力训练材料</h3>
+            <p>包括剧集片段、电台节目和新闻播报，用于适应真实语速和连读习惯。</p>
+          </div>
+        </div>
+        <div class="res-item">
+          <div class="res-icon">说</div>
+          <div>
+            <h3>口语跟读与模仿</h3>
+            <p>选取语速适中的对白段落，逐句跟读并录音对比，重点修正声调和语调。</p>
+          </div>
+        </div>
+        <div class="res-item">
+          <div class="res-icon">读</div>
+          <div>
+            <h3>粤语书面阅读</h3>
+            <p>适合希望阅读粤语书面内容的学习者，材料包括歌词、专栏和影视字幕文本。</p>
+          </div>
+        </div>
+        <div class="res-item">
+          <div class="res-icon">文</div>
+          <div>
+            <h3>语言文化背景</h3>
+            <p>了解粤语在粤港澳及海外华人社区的使用情况，有助于理解用词和表达习惯的差异。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">FAQ</div>
+        <h2>粤语学习常见问题</h2>
+        <p>以下是学习者在入门阶段最常提出的疑问，整理成问答形式供参考。</p>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>完全零基础，应该先学拼音还是先学说话？</summary>
+          <p>建议先花少量时间了解粤拼方案和六个基本调值，不必等到完全掌握再开口。拼音的作用是帮助你准确记住读音，边学边用效率更高。如果完全跳过拼音，很容易形成错误的读音习惯。</p>
+        </details>
+        <details>
+          <summary>粤语和普通话差别很大吗？</summary>
+          <p>两者同属汉语，基本语法结构接近，词汇也有大量重合。主要差异集中在语音系统、部分常用词说法以及语气助词的使用上。对普通话使用者来说，听力和声调通常是最需要投入时间的部分。</p>
+        </details>
+        <details>
+          <summary>粤语有统一的书写标准吗？</summary>
+          <p>粤语口语中存在一批特有汉字，日常网络交流和非正式书写中经常使用。正式书面场合则多采用接近普通话书面语的表达。学习时应根据实际用途选择对应的书写形式。</p>
+        </details>
+        <details>
+          <summary>每天需要练多久才有效果？</summary>
+          <p>相比单次时长，稳定频率更重要。每天保持二十到三十分钟的听力和跟读练习，通常比每周集中练两三个小时更容易形成语感。具体进度因人而异，取决于学习目标和已有语言基础。</p>
+        </details>
+        <details>
+          <summary>看港剧能学会粤语吗？</summary>
+          <p>港剧是很好的听力输入材料，但单纯观看效果有限。建议配合字幕理解内容，再脱离字幕听，最后挑选片段跟读。把被动观看变成主动练习，学习效果会更明显。</p>
+        </details>
+        <details>
+          <summary>粤语声调总是记不住怎么办？</summary>
+          <p>这是入门阶段的普遍现象。可以先用一组固定音节反复练六个调值，建立听觉印象，再把声调放到具体词语中记忆。随着词汇量增加，声调会逐渐从刻意记忆转为自然反应。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>粤语学习网</h4>
+        <p>面向普通话使用者的粤语自学内容平台，整理发音、词汇、口语场景与听力训练相关的学习资料，帮助学习者按清晰路线逐步掌握广东话。</p>
+      </div>
+      <div>
+        <h4>学习栏目</h4>
+        <ul>
+          <li><a href="#path">学习路径</a></li>
+          <li><a href="#pinyin">拼音与声调</a></li>
+          <li><a href="#vocab">常用词汇</a></li>
+          <li><a href="#resource">学习资源</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>入门专题</h4>
+        <ul>
+          <li><a href="#pinyin">粤拼方案入门</a></li>
+          <li><a href="#pinyin">九声六调练习</a></li>
+          <li><a href="#vocab">日常口语短句</a></li>
+          <li><a href="#faq">常见问题解答</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>学习提示</h4>
+        <ul>
+          <li>先听辨，再模仿</li>
+          <li>声调单独练</li>
+          <li>词汇按场景记</li>
+          <li>坚持每日输入</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>粤语学习网 · 内容仅供学习参考</span>
+      <span>发音与用词以实际语境为准，建议结合真人示范练习</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var links = document.querySelectorAll('nav.main-nav a[href^="#"]');
+    links.forEach(function(link){
+      link.addEventListener('click', function(){
+        links.forEach(function(l){ l.classList.remove('active'); });
+        link.classList.add('active');
+      });
+    });
+  })();
+</script>
+
+</body>
+      </html>
